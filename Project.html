@@ -1,45 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Project - 포트폴리오</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="project.css">
 </head>
-
 <body>
     <div class="background"></div>
 
-    <div class="home_container">
-        <main>
-            <section class="image">
-                <img src="images/heejin.png" alt="Heejin">
-            </section>
-
-            <div class="social-icons">
-                <a href="https://github.com/hjzhhhj"><img src="images/github.png" alt="GitHub"></a>
-                <a href="https://velog.io/@hjzhhhj"><img src="images/velog.png" alt="Velog"></a>
-                <a href="https://www.instagram.com/hyizn0/"><img src="images/instagram.png" alt="Instagram"></a>
-            </div>
-        </main>
-
-        <section class="home">
-            <div class="name">
-                <h1 class="name1">My Projects</h1>
-                <h1 class="name2">Heejin</h1>
-            </div>
-            <p>
-                <!-- Add your "Project" content here -->
-                I have worked on several exciting projects, including a personal blog, an e-commerce website, and a weather app using React and Node.js. Check out my GitHub for more details!
-            </p>
-        </section>
-    </div>
-
+    <!-- 홈 버튼 -->
     <a href="index.html" class="home-button">
-        <img src="images/home.png" alt="Home"> 
+        <img src="images/Home.png" alt="Home">
     </a>
 
-</body>
+    <header class="header">
+        <h1>My Projects</h1>
+        <p>Here are some of the projects I have worked on.</p>
+    </header>
 
+    <main class="projects-container">
+        <!-- Example of one project card -->
+        <section class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="project-details">
+                <h2>Project Title</h2>
+                <p>Short description of the project.</p>
+                <p><strong>Duration:</strong> YYYY.MM.DD ~ YYYY.MM.DD</p>
+                <p><strong>Role:</strong> Developer / Designer</p>
+            </div>
+        </section>
+    </main>
+</body>
 </html>
