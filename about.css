@@ -21,88 +21,108 @@ body {
     z-index: -1;
 }
 
-.home_container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    height: 600px;
-    margin: auto;
-    border: 15px solid white;
-    padding: 30px;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
-    border-radius: 50px;
-    background: rgba(255, 255, 255, 0.8);
-}
 
 .home_container main {
     text-align: center;
     flex: 1;
 }
 
-.home_container main .image img {
-    width: 300px; /* 사진 크기 축소 */
+.home_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 15px solid white;
+    padding: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 600px;
+    /* 최소 높이를 지정해서, 너무 작아지지 않도록 설정 */
+}
+
+
+/* 이미지 섹션 */
+.image img {
+    width: 100%;
+    max-width: 100px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-.home_container main .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 30px; /* 간격 조정 */
-}
-
-.home_container main .social-icons a img {
-    width: 40px; /* 아이콘 크기 축소 */
-    transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.home_container main .social-icons a img:hover {
-    transform: scale(1.1); /* 확대 효과 줄임 */
-    filter: brightness(1.2);
-}
-
-.home_container .home {
-    flex: 1;
+/* 소개 섹션 */
+.home {
     text-align: center;
-    padding-top: 50px;
 }
 
-.home_container .name h1 {
+.home .name h1 {
     margin: 0;
-    font-size: 2rem;
+}
+
+.home .name .name1 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.home .name .name2 {
+    font-size: 3rem;
     font-weight: 700;
     color: #49809c;
 }
 
-.home_container .intro-text p {
+.home .intro-text p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.home .description p {
+    font-size: 1.1rem;
+    color: #777;
+    margin: 5px 0;
+}
+
+.home .description strong {
+    color: #007bff;
+}
+
+/* 기술 스택 섹션 */
+.tech-stack {
+    margin-top: 30px;
+    width: 100%;
     text-align: center;
-    color: #000; /* 검정색 글씨 */
-    font-size: 1.4rem; /* 크기 조정 */
-    font-weight: 400;
-    margin-top: 10px;
 }
 
-.home_container .description {
-    margin-top: 20px;
-    text-align: left;
-    font-size: 1.4rem; /* 글씨 크기 확대 */
-    color: #333;
-    line-height: 1.8; /* 줄 간격 조정 */
+.tech-name h2 {
+    font-size: 1.5rem;
+    color: black;
 }
 
-.home_container .description strong {
-    color: #49809c;
-    font-weight: bold;
+.skills {
+    list-style: none;
+    padding: 0;
 }
 
-.home_container .description p {
-    margin-bottom: 10px;
+.skills li {
+    font-size: 1.2em;
+    color: #555;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
 }
 
+.skills li:last-child {
+    border-bottom: none;
+}
+
+.skills li span {
+    font-weight: 600;
+    color: #007bff;
+}
+
+/* 홈 버튼 */
 .home-button {
     position: fixed;
     top: 20px;
@@ -119,11 +139,14 @@ body {
     line-height: 60px;
     text-decoration: none;
     border-radius: 50%;
+    /* 원형 버튼 */
 }
 
+/* 홈 버튼 이미지 */
 .home-button img {
     width: 40px;
     height: 40px;
     margin-top: 10px;
     border-radius: 50%;
+    /* 이미지가 원형으로 보이도록 */
 }
