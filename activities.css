@@ -25,7 +25,7 @@ body {
     transform: translateY(100px);
     display: flex;
     flex-direction: column;
-    justify-content: center;  /* 제목을 세로로 가운데 정렬 */
+    justify-content: space-between;
     align-items: center;
     width: 90%;
     max-width: 1200px;
@@ -38,10 +38,8 @@ body {
     min-height: 600px;
 }
 
-.my-projects-header {
-    margin-top: 20px;
-}
 
+/* 이미지 섹션 */
 .image img {
     width: 100%;
     max-width: 100px;
@@ -49,44 +47,27 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* 프로젝트 카드 - 배경 네모 스타일 적용 */
-.project-card {
-    width: 350px;  /* 카드 크기 늘림 */
-    background: rgba(255, 255, 255, 0.8);
-    border: 15px solid white;
-    padding: 30px;  /* 카드 내 내용 여백 늘림 */
-    border-radius: 50px;
-    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
-    margin-bottom: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
+.name1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+.activities-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
 }
 
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 20px;
+.activities-list li {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #333;
 }
 
-.project-details {
-    padding: 15px;
-    text-align: left;
-}
-
-.project-details h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+.activities-list li b {
     color: #49809c;
-}
-
-.project-details p {
-    font-size: 1rem;
-    margin: 5px 0;
 }
 
 /* 홈 버튼 */
@@ -113,14 +94,4 @@ body {
     height: 40px;
     margin-top: 10px;
     border-radius: 50%;
-}
-
-/* 프로젝트 카드 섹션 */
-.projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    padding: 20px;
-    margin-top: 30px;
 }

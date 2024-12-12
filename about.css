@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url("images/sky2.jpg") no-repeat center center/cover;
+    background: url("images/sky.jpg") no-repeat center center/cover;
     font-family: 'Poppins', sans-serif;
 }
 
