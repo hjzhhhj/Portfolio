@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/sky.jpg") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 219, 226, 0.777);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.home_container {
+    transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 15px solid white;
+    padding: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 600px;
+}
+
+
+/* 이미지 섹션 */
+.image img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.name1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.activities-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.activities-list li {
+    margin: 15px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.activities-list li b {
+    color: #49809c;
+}
+
+/* 홈 버튼 */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.home-button img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+}

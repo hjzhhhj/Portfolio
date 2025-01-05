@@ -1,0 +1,172 @@
+/* 공통 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/sky.jpg") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 배경 */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 219, 226, 0.777);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* 메인 컨테이너 */
+.home_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 15px solid white;
+    padding: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 600px;
+}
+
+/* 헤더 */
+.my-projects-header {
+    text-align: center;
+}
+
+.name1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+/* 프로필 사진 섹션 */
+.profile-container {
+    position: relative;
+    margin: 20px auto;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+        display:block; 
+        margin:auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.profile-container:hover .profile-img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    content: url("images/heejin.png");
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    margin-top: 50px;
+}
+
+.social-icons a img {
+    width: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* 연락처 정보 */
+.contact-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-info a {
+    color: #49809c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* 홈 버튼 */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.home-button img {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.speech-bubble {
+    position: relative;
+    display: inline-block;
+    background-color: #ffdd57;
+    margin-left: 20px;
+    border-radius: 10px;
+    width: 100px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    max-width: 200px;
+    text-align: center;
+}
+
+.speech-bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #ffdd57;
+    border-radius: 50%;
+    border: 2px solid #ffdd57;
+}
+

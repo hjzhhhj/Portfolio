@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("images/sky.jpg") no-repeat center center/cover;
+    font-family: 'Poppins', sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(219, 219, 226, 0.777);
+    filter: blur(8px);
+    z-index: -1;
+}
+
+.home_container {
+    transform: translateY(100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* 제목을 세로로 가운데 정렬 */
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    border: 15px solid white;
+    padding: 30px;
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    min-height: 600px;
+}
+
+.my-projects-header {
+    margin-top: 20px;
+}
+
+.image img {
+    width: 100%;
+    max-width: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 프로젝트 카드 - 배경 네모 스타일 적용 */
+.project-card {
+    width: 350px;  /* 카드 크기 늘림 */
+    background: rgba(255, 255, 255, 0.8);
+    border: 15px solid white;
+    padding: 30px;  /* 카드 내 내용 여백 늘림 */
+    border-radius: 50px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.project-details {
+    padding: 15px;
+    text-align: left;
+}
+
+.project-details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #49809c;
+}
+
+.project-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* 홈 버튼 */
+.home-button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.home-button img {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+/* 프로젝트 카드 섹션 */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 30px;
+}
